@@ -41,7 +41,6 @@ Typical use cases:
 
 ## Repository structure
 
-```text
 MOPEKA_API/
 ├── .gitattributes
 ├── .gitignore
