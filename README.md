@@ -5,8 +5,8 @@
     <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&slug=MedVedZot&button_colour=FFDD00&font_colour=000000&font_family=Arial&outline_colour=000000&coffee_colour=ffffff" />
   </a>
 </p>
-
 <sub>No subscriptions. Just support if you find value.</sub>
+
 
 
 A small Python client for authenticating against the Mopeka cloud backend and fetching the latest sensor data for devices linked to your account.
