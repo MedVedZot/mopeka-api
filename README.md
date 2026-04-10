@@ -8,6 +8,8 @@
 No subscriptions. Just support if you find value.
 <br/><br/>
 
+## About
+
 A small Python client for authenticating against the Mopeka cloud backend and fetching the latest sensor data for devices linked to your account.
 
 This repository is intended for simple direct access to Mopeka sensor data outside the official mobile app. The script authenticates through AWS Cognito, requests the device list, and then fetches the latest `data-shadow` payload for each device.
