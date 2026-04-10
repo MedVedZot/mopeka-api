@@ -6,6 +6,7 @@
   </a>
 </p>
 No subscriptions. Just support if you find value.
+<br/><br/>
 
 A small Python client for authenticating against the Mopeka cloud backend and fetching the latest sensor data for devices linked to your account.
 
