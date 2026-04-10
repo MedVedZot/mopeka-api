@@ -15,12 +15,16 @@ This repository is intended for simple direct access to Mopeka sensor data outsi
 ## Repository structure
 
 ```text
-mopeka/
-├── __init__.py
-├── client.py
-├── config.json
+MOPEKA_API/
+├── .gitattributes
+├── .gitignore
+├── LICENSE
+├── README.md
 ├── requirements.txt
-└── README.md
+└── mopeka/
+    ├── __init__.py
+    ├── client.py
+    └── config.json
 ```
 
 ## Requirements
@@ -90,12 +94,38 @@ The script will:
 ## Example output
 
 ```text
---- Propane Tank Left (AA:BB:CC:DD:EE:FF) ---
+--- Propane Tank Main (AA:BB:CC:DD:EE:FF) ---
 {
-  "address": "AA:BB:CC:DD:EE:FF",
-  "batteryVoltage": 2.91,
-  "temperature": 21.3,
-  "tankLevel": 73
+  "Temp": {
+    "N": "25"
+  },
+  "Quality": {
+    "N": "75"
+  },
+  "Source": {
+    "S": "12345678-1234-1234-1234-123456789abc"
+  },
+  "ttl": {
+    "N": "1783501377"
+  },
+  "RawLevel": {
+    "N": "10"
+  },
+  "Button": {
+    "N": "0"
+  },
+  "Value": {
+    "N": "0.125"
+  },
+  "BatteryLevel": {
+    "N": "3.12"
+  },
+  "MAC": {
+    "S": "AA:BB:CC:DD:EE:FF"
+  },
+  "Timestamp": {
+    "N": "1775617377956"
+  }
 }
 ```
 
