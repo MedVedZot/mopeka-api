@@ -1,5 +1,13 @@
 # Mopeka Cloud API Client
 
+# Mopeka Cloud API Client
+
+<p align="left">
+  <a href="https://buymeacoffee.com/MedVedZot">
+    <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=MedVedZot&button_colour=FFDD00&font_colour=000000&font_family=Arial&outline_colour=000000&coffee_colour=ffffff" />
+  </a>
+</p>
+
 A small Python client for authenticating against the Mopeka cloud backend and fetching the latest sensor data for devices linked to your account.
 
 This repository is intended for simple direct access to Mopeka sensor data outside the official mobile app. The script authenticates through AWS Cognito, requests the device list, and then fetches the latest `data-shadow` payload for each device.
