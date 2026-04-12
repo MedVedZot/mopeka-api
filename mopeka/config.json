@@ -3,5 +3,7 @@
   "password": "password",
   "user_pool_id": "us-east-1_sLQ1KlStp",
   "client_id": "7dafulgmkck7u9hiju6v6p1emt",
-  "base_url": "https://gateway.mopeka.cloud/app/sensors"
+  "base_url": "https://gateway.mopeka.cloud/app/sensors",
+  "timeout": 60,
+  "region": "us-east-1"
 }
