@@ -1,7 +1,7 @@
 import time
 import json
 from datetime import datetime
-from mopeka.client import MopekaClient, load_config
+from .client import MopekaClient, load_config
 
 TARGET_DEVICE_ID = "000000000000"
 DATE_START = "2026-01-01"

@@ -1,7 +1,6 @@
-#!/usr/bin/env python3
 import json
 import sys
-from mopeka.client import MopekaClient, load_config
+from .client import MopekaClient, load_config
 
 def main() -> int:
     try:

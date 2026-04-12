@@ -1,6 +1,6 @@
 # Mopeka Cloud API Client
 
-**Version:** 1.0.1
+**Version:** 1.0.2
 
 <p align="left">
   <a href="https://buymeacoffee.com/MedVedZot">
