@@ -1,11 +1,12 @@
 import time
 import json
 from datetime import datetime
-from .client import MopekaClient, load_config
+from mopeka.client import MopekaClient, load_config
+
 
 TARGET_DEVICE_ID = "000000000000"
 DATE_START = "2026-01-01"
-DATE_END   = "2026-04-01"
+DATE_END   = "2026-04-19"
 
 COLUMNS_TO_SHOW = [
     "timestamp_iso",

@@ -1,6 +1,6 @@
 # Mopeka Cloud API Client
 
-**Version:** 1.0.2
+**Version:** 1.0.3
 
 <p align="left">
   <a href="https://buymeacoffee.com/MedVedZot">
@@ -78,13 +78,13 @@ MOPEKA_API/
 ├── LICENSE
 ├── README.md
 ├── requirements.txt
-├── run.py                          # Console runner
-├── read_history.py                 # Console runner read history date
-├── export_history.py               # Console runner export history date
 └── mopeka/                         # Python package
     ├── __init__.py                 # Package exports
     ├── __version__.py              # Version information
     ├── client.py                   # MopekaClient class
+    ├── run.py                      # Console runner
+    ├── read_history.py             # Console runner read history date
+    ├── export_history.py           # Console runner export history date
     └── config.json                 # Configuration
 ```
 

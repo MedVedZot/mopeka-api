@@ -1,6 +1,6 @@
 import json
 import sys
-from .client import MopekaClient, load_config
+from mopeka.client import MopekaClient, load_config
 
 def main() -> int:
     try:
