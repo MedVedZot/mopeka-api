@@ -59,7 +59,8 @@ class MopekaClient:
         return default
 
     def _format_data(self, raw: Dict, device: Dict) -> Dict:
-        val = self._parse_value(raw, "Value", 0)
+        val_raw = self._parse_value(raw, "Value", 0)
+        val = max(0.0, val_raw - 0.017) if val_raw > 0 else 0.0
         ts_ms = self._parse_value(raw, "Timestamp", 0)
         ts = ts_ms / 1000.0
         ttl = self._parse_value(raw, "ttl", 0)
@@ -114,7 +115,11 @@ class MopekaClient:
         if height <= 0: return 0.0
         x = max(0.0, min(1.0, level / height))
         if vertical or x <= 0 or x >= 1: return round(x * 100.0, 2)
-        return round((math.acos(1 - 2 * x) - 2 * (1 - 2 * x) * math.sqrt(x - x * x)) / math.pi * 100.0, 2)
+        r, h, k = height / 2.0, level, 4.5
+        v_cyl = (math.acos(1 - 2*x) - (1 - 2*x) * math.sin(math.acos(1 - 2*x))) * (r**2) * k * r
+        v_heads = (math.pi * (h**2) * (3*r - h)) / 3.0
+        v_max = (math.pi * (r**2) * k * r) + (4.0 / 3.0 * math.pi * (r**3))
+        return round((v_cyl + v_heads) / v_max * 100.0, 2)
 
     def _parse_tank_type(self, t_type: str) -> tuple:
         m = re.match(r'^([\d.]+)\s*([a-zA-Z]+)$', str(t_type).strip())
